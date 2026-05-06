@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+WTMR,low,10,0.7,1,buy_yes,1,50.0,52.5,0.51,15.0,14.49,1,0,3652,2026-05-06T19:58:49Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,2,buy_yes,1,52.5,55.0,0.54,14.49,13.95,2,0,2618,2026-05-06T19:58:52Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,3,buy_yes,2,55.0,59.9,1.15,13.95,12.8,4,0,5470,2026-05-06T19:58:58Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,4,buy_yes,3,59.9,66.8,1.9,12.8,10.9,7,0,5917,2026-05-06T19:59:04Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,5,buy_yes,2,66.8,71.1,1.38,10.9,9.52,9,0,2900,2026-05-06T19:59:06Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,6,buy_no,1,71.1,69.0,0.3,9.52,9.22,9,1,5813,2026-05-06T19:59:12Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,7,buy_yes,3,69.0,75.0,2.16,9.22,7.06,12,1,5601,2026-05-06T19:59:18Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,8,pass,0,75.0,75.0,0.0,7.06,7.06,12,1,6161,2026-05-06T19:59:24Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,9,pass,0,75.0,75.0,0.0,7.06,7.06,12,1,1435,2026-05-06T19:59:26Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,10,pass,0,75.0,75.0,0.0,7.06,7.06,12,1,1703,2026-05-06T19:59:27Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,11,buy_yes,3,75.0,80.2,2.33,7.06,4.73,15,1,4214,2026-05-06T19:59:31Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,12,pass,0,80.2,80.2,0.0,4.73,4.73,15,1,2310,2026-05-06T19:59:34Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,13,pass,0,80.2,80.2,0.0,4.73,4.73,15,1,1518,2026-05-06T19:59:35Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,14,pass,0,80.2,80.2,0.0,4.73,4.73,15,1,32135,2026-05-06T20:00:07Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,15,buy_yes,2,80.2,83.2,1.63,4.73,3.1,17,1,3053,2026-05-06T20:00:11Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,16,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1720,2026-05-06T20:00:12Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,17,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1148,2026-05-06T20:00:13Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,18,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1232,2026-05-06T20:00:15Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,19,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1240,2026-05-06T20:00:16Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,20,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1116,2026-05-06T20:00:17Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,21,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1065,2026-05-06T20:00:18Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,22,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1180,2026-05-06T20:00:19Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,23,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,2367,2026-05-06T20:00:22Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,24,pass,0,83.2,83.2,0.0,3.1,3.1,17,1,1253,2026-05-06T20:00:23Z,red,20.26,True,1,70,83,3,0,False,Computer Science
+WTMR,low,10,0.7,25,buy_yes,1,83.2,84.6,0.84,3.1,2.26,18,1,6875,2026-05-06T20:00:30Z,red,20.26,True,1,70,83,3,0,False,Computer Science

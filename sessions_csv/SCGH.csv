@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+SCGH,high,100,0.7,1,buy_yes,5,50.0,51.2,2.53,15.0,12.47,5,0,11289,2026-05-06T20:08:14Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,2,buy_yes,1,51.2,51.5,0.51,12.47,11.96,6,0,9118,2026-05-06T20:08:23Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,3,buy_no,1,51.5,51.2,0.49,11.96,11.47,6,1,2307,2026-05-06T20:08:25Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,4,buy_yes,4,51.2,52.2,2.07,11.47,9.4,10,1,8226,2026-05-06T20:08:34Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,5,buy_yes,3,52.2,53.0,1.58,9.4,7.82,13,1,4787,2026-05-06T20:08:38Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,6,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,1750,2026-05-06T20:08:40Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,7,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,592,2026-05-06T20:08:41Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,8,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,579,2026-05-06T20:08:41Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,9,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,553,2026-05-06T20:08:42Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,10,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,599,2026-05-06T20:08:43Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,11,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,618,2026-05-06T20:08:43Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,12,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,606,2026-05-06T20:08:44Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,13,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,603,2026-05-06T20:08:45Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,14,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,742,2026-05-06T20:08:45Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,15,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,707,2026-05-06T20:08:46Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,16,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,635,2026-05-06T20:08:47Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,17,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,648,2026-05-06T20:08:47Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,18,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,700,2026-05-06T20:08:48Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,19,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,673,2026-05-06T20:08:49Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,20,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,682,2026-05-06T20:08:49Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,21,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,683,2026-05-06T20:08:50Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,22,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,730,2026-05-06T20:08:51Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,23,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,897,2026-05-06T20:08:52Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,24,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,1228,2026-05-06T20:08:53Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
+SCGH,high,100,0.7,25,pass,0,53.0,53.0,0.0,7.82,7.82,13,1,1116,2026-05-06T20:08:54Z,blue,8.82,True,1,70,70,1,0,False,Computer Science
