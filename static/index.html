@@ -13,11 +13,31 @@
     <section class="screen" id="screen-welcome" data-screen="welcome">
       <div class="card">
         <h1 class="page-title">Prediction Market Study</h1>
+
+        <h2 class="section-head">What you'll do</h2>
         <p class="lead">
-          You will participate in a short interactive study where you trade in a
-          simulated prediction market for about 15 minutes. No real money is
-          involved at any point. All data collected is anonymous and used only
-          for the CS&nbsp;598 final report.
+          Imagine a jar holding 100 balls: 70 red and 30 blue. At the end of
+          the session, one ball will be drawn at random. Your task is to
+          decide, round by round, whether you think it'll be red or blue, and
+          back your answer by buying shares.
+        </p>
+        <p class="lead">
+          A "<strong>Yes</strong>" share is a bet that <strong>red</strong>
+          will be drawn. A "<strong>No</strong>" share is a bet that
+          <strong>blue</strong> will be drawn. After the draw, every share on
+          the winning side pays <strong>$1.00</strong>; shares on the losing
+          side pay $0.
+        </p>
+        <p class="lead">
+          You start with $15.00 and play 25 rounds. Each round you can buy
+          some Yes or No shares, or pass. Prices move as you trade. The whole
+          thing takes about 15 minutes.
+        </p>
+
+        <h2 class="section-head">Before you start</h2>
+        <p class="lead">
+          No real money is involved at any point — payouts are simulated. All
+          data is anonymous and used only for the CS&nbsp;598 final report.
         </p>
         <ul class="consent-list">
           <li>Participation is voluntary and you may stop at any time.</li>
@@ -38,39 +58,54 @@
     </section>
 
     <!-- ─── Screen 1b: Comprehension Check (CHANGES #3) ─── -->
+    <!-- Scenario-based multiple choice: same facts as before (Yes pays $1
+         on red, No pays $0 on red) but each question is a concrete situation
+         the participant can reason about, not symbol manipulation. -->
     <section class="screen" id="screen-comprehension" data-screen="comprehension" hidden>
       <div class="card">
-        <h1 class="page-title">Quick comprehension check</h1>
+        <h1 class="page-title">A quick check before you start</h1>
         <p class="lead">
-          Two short questions to make sure the payout structure is clear before
-          you start trading. You'll need both correct to continue.
+          Two short questions to make sure the payout rules make sense. You'll
+          need both correct to continue — if you get one wrong, we'll show
+          why and let you try again.
         </p>
 
         <form id="comprehension-form" novalidate>
 
           <div class="field">
-            <label class="field-label" for="cq1-input">
-              1. If you buy a Yes share for ¢40 and a <strong>red</strong> ball
-              is drawn, how much do you receive per share? (Enter a number from
-              0 to 100.)
-            </label>
-            <input type="number" id="cq1-input" min="0" max="100" step="1" required />
+            <p class="field-label">
+              1. You bought <strong>3 Yes shares</strong> earlier for $1.20.
+              At the end of the session, a <strong>red</strong> ball is
+              drawn. How much do you receive from those shares?
+            </p>
+            <div class="choice-group" data-question="cq1">
+              <label class="choice"><input type="radio" name="cq1" value="0" required /><span>$0 — they expire worthless</span></label>
+              <label class="choice"><input type="radio" name="cq1" value="1" /><span>$1.20 — you get back what you paid</span></label>
+              <label class="choice"><input type="radio" name="cq1" value="3" /><span>$3.00 — Yes shares pay $1 each on red</span></label>
+            </div>
             <div class="field-error" id="cq1-error" hidden>
-              Not quite. Yes shares pay <strong>¢100</strong> if a red ball is
-              drawn. Try again.
+              Not quite. <strong>Yes</strong> shares are a bet on
+              <strong>red</strong>, and red was drawn — so each share pays
+              $1.00. With 3 shares you'd receive $3.00. The price you paid
+              ($1.20 in this example) doesn't change the payout. Try again.
             </div>
           </div>
 
           <div class="field">
-            <label class="field-label" for="cq2-input">
-              2. If you buy a No share for ¢60 and a <strong>red</strong> ball
-              is drawn, how much do you receive per share? (Enter a number from
-              0 to 100.)
-            </label>
-            <input type="number" id="cq2-input" min="0" max="100" step="1" required />
+            <p class="field-label">
+              2. You bought <strong>5 No shares</strong> earlier for $2.00.
+              At the end of the session, a <strong>red</strong> ball is
+              drawn. How much do you receive from those shares?
+            </p>
+            <div class="choice-group" data-question="cq2">
+              <label class="choice"><input type="radio" name="cq2" value="0" required /><span>$0 — they expire worthless</span></label>
+              <label class="choice"><input type="radio" name="cq2" value="2" /><span>$2.00 — you get back what you paid</span></label>
+              <label class="choice"><input type="radio" name="cq2" value="5" /><span>$5.00 — they pay $1 each</span></label>
+            </div>
             <div class="field-error" id="cq2-error" hidden>
-              Not quite. No shares pay <strong>¢0</strong> if a red ball is
-              drawn (they pay ¢100 only if blue is drawn). Try again.
+              Not quite. <strong>No</strong> shares win only if
+              <strong>blue</strong> is drawn. Red was drawn, so the No
+              shares expire worthless and you receive $0. Try again.
             </div>
           </div>
 
@@ -89,14 +124,16 @@
       <div class="card">
         <h1 class="page-title">One more question before round 1</h1>
         <p class="lead">
-          Based <strong>only</strong> on the urn contents (70 red, 30 blue),
-          what is your best estimate of the probability that a red ball will be
-          drawn? Enter a whole number from 0 to 100.
+          Out of <strong>100</strong>, how likely do you think it is that the
+          ball drawn at the end will be <strong>red</strong>? Go with your
+          gut — there's no right answer here, just your honest estimate.
         </p>
 
         <form id="belief-form" novalidate>
           <div class="field">
-            <label class="field-label" for="belief-input">Your estimate (%)</label>
+            <label class="field-label" for="belief-input">
+              Your estimate (a whole number from 0 to 100)
+            </label>
             <input type="number" id="belief-input" min="0" max="100" step="1" required />
           </div>
           <button type="submit" class="btn btn-primary" id="belief-submit">
@@ -117,16 +154,18 @@
             The urn contains 70 red balls and 30 blue balls. One ball will be
             drawn at random after Round 25.
           </p>
-          <p class="info-italic">
-            Prices move as participants buy and sell — no new information is
-            revealed during the session.
-          </p>
-          <!-- CHANGES #2 — persistent payout reminder, visible every round. -->
+          <!-- Payout reminder lifted above the italic note so it's the
+               first thing under the urn description, not buried below. -->
           <div class="payout-reminder">
-            Each share pays <strong>¢100</strong> if it's correct,
-            <strong>¢0</strong> if not. Buy below your estimate of the true
-            chance, sell above it.
+            <strong>Yes</strong> shares pay <strong>$1.00</strong> each if a
+            <strong>red</strong> ball is drawn, $0 otherwise.
+            <strong>No</strong> shares pay <strong>$1.00</strong> each if a
+            <strong>blue</strong> ball is drawn, $0 otherwise.
           </div>
+          <p class="info-italic">
+            The urn won't change during the session. The price you see is set
+            by trades — including yours — not by anything new being revealed.
+          </p>
         </header>
 
         <div class="recap-strip" id="recap-strip" hidden></div>
@@ -145,10 +184,18 @@
 
           <div class="trade-panel" id="trade-panel">
 
-            <!-- Side-select view (always present; quantity view appears below it). -->
+            <!-- Side-select view (always present; quantity view appears below it).
+                 Buttons are self-describing: top line is the action ("Buy Yes"),
+                 second line is what that bet means ("red will be drawn"). -->
             <div class="side-buttons">
-              <button class="side-btn" data-side="buy_yes" id="btn-buy-yes">Buy Yes</button>
-              <button class="side-btn" data-side="buy_no" id="btn-buy-no">Buy No</button>
+              <button class="side-btn" data-side="buy_yes" id="btn-buy-yes">
+                <span class="side-btn-main">Buy Yes</span>
+                <span class="side-btn-sub">a red ball will be drawn</span>
+              </button>
+              <button class="side-btn" data-side="buy_no" id="btn-buy-no">
+                <span class="side-btn-main">Buy No</span>
+                <span class="side-btn-sub">a blue ball will be drawn</span>
+              </button>
             </div>
 
             <div class="quantity-block" id="quantity-block" hidden>

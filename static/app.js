@@ -16,10 +16,12 @@ const STARTING_CASH  = 15.00;
 const MAX_ROUNDS     = 25;
 const PREVIEW_DEBOUNCE_MS = 100;
 
-// CHANGES #3 — comprehension-check ground truth. Both red-draw scenarios:
-// Yes pays ¢100 if red, No pays ¢0 if red.
-const CQ1_ANSWER = 100;
-const CQ2_ANSWER = 0;
+// CHANGES #3 — comprehension-check ground truth. Scenario-based:
+//   CQ1: 3 Yes shares + red drawn  → $3.00 payout (Yes pays $1 each on red).
+//   CQ2: 5 No shares + red drawn   → $0.00 payout (No pays only on blue).
+// Values match the `value` attributes on the radio inputs in index.html.
+const CQ1_ANSWER = "3";
+const CQ2_ANSWER = "0";
 
 // ─── Session state (volatile; lost on reload, by design) ─────────
 const state = {
@@ -454,8 +456,14 @@ function initComprehension() {
     e.preventDefault();
     attempts += 1;
 
-    const a1 = parseInt($('cq1-input').value, 10);
-    const a2 = parseInt($('cq2-input').value, 10);
+    const fd = new FormData(form);
+    const a1 = fd.get('cq1');  // string radio value, or null if unanswered
+    const a2 = fd.get('cq2');
+
+    if (a1 === null || a2 === null) {
+      return alert('Please answer both questions before continuing.');
+    }
+
     const ok1 = a1 === CQ1_ANSWER;
     const ok2 = a2 === CQ2_ANSWER;
 

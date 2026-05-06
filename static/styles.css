@@ -65,7 +65,15 @@ body {
 
 .page-title { font-size: 32px; font-weight: 600; margin: 0 0 16px; letter-spacing: -0.01em; }
 .subtitle   { font-size: 14px; color: var(--text-secondary); margin: 4px 0 0; }
-.lead       { font-size: 14px; color: var(--text-primary); margin: 0 0 16px; }
+.lead       { font-size: 14px; color: var(--text-primary); margin: 0 0 12px; }
+
+/* Section heading inside a card (welcome screen uses two of these). */
+.section-head {
+  font-size: 16px; font-weight: 600;
+  color: var(--text-primary);
+  margin: 24px 0 8px;
+}
+.section-head + .lead { margin-top: 0; }
 
 .kicker {
   font-size: 11px; font-weight: 600;
@@ -248,22 +256,32 @@ body {
 }
 .side-btn {
   width: 100%;
-  height: 64px;
+  min-height: 64px;
+  padding: 10px 14px;
   background: white;
   border: 1px solid var(--gridline);
   border-radius: var(--radius-control);
   font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
   color: var(--text-primary);
   cursor: pointer;
   transition: border-color 120ms, background-color 120ms;
+  display: flex; flex-direction: column; align-items: flex-start;
+  justify-content: center; gap: 2px;
+  text-align: left;
+}
+.side-btn-main {
+  font-size: 16px; font-weight: 600;
+}
+.side-btn-sub {
+  font-size: 12px; font-weight: 400;
+  color: var(--text-secondary);
 }
 .side-btn:hover { background: #FAFAFC; }
 .side-btn.selected {
   border: 2px solid var(--accent-blue);
   background: #F1F4FB;
 }
+.side-btn.selected .side-btn-sub { color: var(--text-primary); }
 
 .quantity-block { margin-top: 12px; }
 
@@ -421,6 +439,33 @@ body {
 }
 .likert input[type="radio"],
 .yes-no input[type="radio"] { margin: 0; }
+
+/* Comprehension-check radio list — vertical, full-width clickable rows so
+ * each scenario answer reads as a discrete choice rather than a chip. */
+.choice-group {
+  display: flex; flex-direction: column; gap: 8px;
+}
+.choice {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 12px 14px;
+  background: white;
+  border: 1px solid var(--gridline);
+  border-radius: var(--radius-control);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: border-color 120ms, background-color 120ms;
+}
+.choice:hover { background: #FAFAFC; }
+.choice input[type="radio"] {
+  margin: 2px 0 0;
+  flex-shrink: 0;
+}
+.choice:has(input[type="radio"]:checked) {
+  border: 2px solid var(--accent-blue);
+  background: #F1F4FB;
+  padding: 11px 13px;  /* compensate for the +1px border */
+}
 
 #experience-input,
 #field-input {
