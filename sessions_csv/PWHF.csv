@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+PWHF,high,100,0.7,1,buy_yes,5,50.0,51.2,2.53,15.0,12.47,5,0,39923,2026-05-06T20:58:41Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,2,buy_yes,1,51.2,51.5,0.51,12.47,11.96,6,0,107011,2026-05-06T21:00:28Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,3,buy_yes,1,51.5,51.7,0.52,11.96,11.44,7,0,86797,2026-05-06T21:01:54Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,4,buy_no,3,51.7,51.0,1.46,11.44,9.98,7,3,60058,2026-05-06T21:02:55Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,5,buy_no,2,51.0,50.5,0.99,9.98,8.99,7,5,41438,2026-05-06T21:03:36Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,6,buy_yes,1,50.5,50.7,0.51,8.99,8.48,8,5,14501,2026-05-06T21:03:50Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,7,buy_yes,1,50.7,51.0,0.51,8.48,7.97,9,5,1323,2026-05-06T21:03:52Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,8,buy_yes,1,51.0,51.2,0.51,7.97,7.46,10,5,1300,2026-05-06T21:03:53Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,9,buy_yes,1,51.2,51.5,0.51,7.46,6.95,11,5,1423,2026-05-06T21:03:55Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,10,buy_yes,1,51.5,51.7,0.52,6.95,6.43,12,5,1415,2026-05-06T21:03:56Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,11,buy_yes,1,51.7,52.0,0.52,6.43,5.91,13,5,1350,2026-05-06T21:03:57Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,12,buy_yes,1,52.0,52.2,0.52,5.91,5.39,14,5,1180,2026-05-06T21:03:59Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,13,buy_yes,1,52.2,52.5,0.52,5.39,4.87,15,5,1167,2026-05-06T21:04:00Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,14,buy_yes,1,52.5,52.7,0.53,4.87,4.34,16,5,1263,2026-05-06T21:04:01Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,15,buy_yes,1,52.7,53.0,0.53,4.34,3.81,17,5,1406,2026-05-06T21:04:02Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,16,buy_yes,1,53.0,53.2,0.53,3.81,3.28,18,5,1385,2026-05-06T21:04:04Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,17,buy_yes,1,53.2,53.5,0.53,3.28,2.75,19,5,1534,2026-05-06T21:04:05Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,18,buy_yes,1,53.5,53.7,0.54,2.75,2.21,20,5,1421,2026-05-06T21:04:07Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,19,buy_yes,1,53.7,54.0,0.54,2.21,1.67,21,5,1589,2026-05-06T21:04:08Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,20,buy_yes,1,54.0,54.2,0.54,1.67,1.13,22,5,1583,2026-05-06T21:04:10Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,21,buy_yes,1,54.2,54.5,0.54,1.13,0.59,23,5,1583,2026-05-06T21:04:12Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,22,buy_no,1,54.5,54.2,0.46,0.59,0.13,23,6,5514,2026-05-06T21:04:17Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,23,pass,0,54.2,54.2,0.0,0.13,0.13,23,6,2056,2026-05-06T21:04:19Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,24,pass,0,54.2,54.2,0.0,0.13,0.13,23,6,699,2026-05-06T21:04:20Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
+PWHF,high,100,0.7,25,pass,0,54.2,54.2,0.0,0.13,0.13,23,6,818,2026-05-06T21:04:21Z,blue,6.13,True,1,70,70,3,0,False,Computer Science
