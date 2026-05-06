@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+TNPF,high,100,0.7,1,buy_yes,10,50.0,52.5,5.12,15.0,9.88,10,0,46143,2026-05-06T20:35:30Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,2,pass,0,52.5,52.5,0.0,9.88,9.88,10,0,44632,2026-05-06T20:36:14Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,3,buy_yes,5,52.5,53.7,2.66,9.88,7.22,15,0,11166,2026-05-06T20:36:25Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,4,pass,0,53.7,53.7,0.0,7.22,7.22,15,0,6601,2026-05-06T20:36:32Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,5,pass,0,53.7,53.7,0.0,7.22,7.22,15,0,7350,2026-05-06T20:36:39Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,6,pass,0,53.7,53.7,0.0,7.22,7.22,15,0,3652,2026-05-06T20:36:43Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,7,buy_yes,5,53.7,55.0,2.72,7.22,4.5,20,0,7529,2026-05-06T20:36:50Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,8,buy_no,5,55.0,53.7,2.28,4.5,2.22,20,5,8506,2026-05-06T20:36:59Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,9,pass,0,53.7,53.7,0.0,2.22,2.22,20,5,12210,2026-05-06T20:37:11Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,10,buy_yes,4,53.7,54.7,2.17,2.22,0.05,24,5,18516,2026-05-06T20:37:30Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,11,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,1322,2026-05-06T20:37:31Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,12,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,576,2026-05-06T20:37:32Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,13,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,1694,2026-05-06T20:37:33Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,14,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,642,2026-05-06T20:37:34Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,15,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,564,2026-05-06T20:37:35Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,16,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,584,2026-05-06T20:37:35Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,17,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,896,2026-05-06T20:37:36Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,18,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,606,2026-05-06T20:37:37Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,19,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,976,2026-05-06T20:37:38Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,20,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,525,2026-05-06T20:37:38Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,21,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,556,2026-05-06T20:37:39Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,22,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,585,2026-05-06T20:37:39Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,23,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,566,2026-05-06T20:37:40Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,24,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,617,2026-05-06T20:37:41Z,red,24.05,True,2,70,70,3,3,True,Computer Science
+TNPF,high,100,0.7,25,pass,0,54.7,54.7,0.0,0.05,0.05,24,5,781,2026-05-06T20:37:41Z,red,24.05,True,2,70,70,3,3,True,Computer Science
