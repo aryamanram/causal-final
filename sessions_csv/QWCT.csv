@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+QWCT,high,100,0.7,1,buy_yes,10,50.0,52.5,5.12,15.0,9.88,10,0,100460,2026-05-06T20:54:11Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,2,buy_yes,10,52.5,55.0,5.37,9.88,4.51,20,0,16166,2026-05-06T20:54:27Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,3,buy_yes,8,55.0,57.0,4.48,4.51,0.03,28,0,23319,2026-05-06T20:54:50Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,4,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1981,2026-05-06T20:54:52Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,5,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,961,2026-05-06T20:54:53Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,6,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,661,2026-05-06T20:54:54Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,7,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,568,2026-05-06T20:54:54Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,8,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,600,2026-05-06T20:54:55Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,9,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,603,2026-05-06T20:54:56Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,10,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,560,2026-05-06T20:54:56Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,11,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,557,2026-05-06T20:54:57Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,12,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1150,2026-05-06T20:54:58Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,13,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,670,2026-05-06T20:54:58Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,14,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,535,2026-05-06T20:54:59Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,15,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,550,2026-05-06T20:55:00Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,16,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,540,2026-05-06T20:55:00Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,17,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,618,2026-05-06T20:55:01Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,18,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,558,2026-05-06T20:55:01Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,19,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1135,2026-05-06T20:55:02Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,20,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1018,2026-05-06T20:55:03Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,21,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,677,2026-05-06T20:55:04Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,22,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,990,2026-05-06T20:55:05Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,23,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1110,2026-05-06T20:55:06Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,24,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,974,2026-05-06T20:55:07Z,red,28.03,True,2,70,70,4,12,False,Computer Science
+QWCT,high,100,0.7,25,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1203,2026-05-06T20:55:08Z,red,28.03,True,2,70,70,4,12,False,Computer Science
