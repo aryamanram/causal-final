@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+FMBM,low,10,0.7,1,buy_no,10,50.0,26.9,6.2,15.0,8.8,0,10,8851,2026-05-06T21:28:22Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,2,pass,0,26.9,26.9,0.0,8.8,8.8,0,10,1852,2026-05-06T21:28:24Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,3,pass,0,26.9,26.9,0.0,8.8,8.8,0,10,894,2026-05-06T21:28:25Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,4,buy_no,10,26.9,11.9,8.14,8.8,0.66,0,20,2800,2026-05-06T21:28:28Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,5,pass,0,11.9,11.9,0.0,0.66,0.66,0,20,1134,2026-05-06T21:28:29Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,6,pass,0,11.9,11.9,0.0,0.66,0.66,0,20,1529,2026-05-06T21:28:31Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,7,buy_yes,4,11.9,16.8,0.57,0.66,0.09,4,20,8544,2026-05-06T21:28:39Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,8,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1580,2026-05-06T21:28:41Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,9,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,609,2026-05-06T21:28:41Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,10,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1305,2026-05-06T21:28:43Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,11,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1030,2026-05-06T21:28:44Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,12,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1709,2026-05-06T21:28:45Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,13,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,702,2026-05-06T21:28:46Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,14,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1345,2026-05-06T21:28:47Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,15,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1479,2026-05-06T21:28:49Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,16,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,926,2026-05-06T21:28:50Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,17,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,2871,2026-05-06T21:28:53Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,18,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1189,2026-05-06T21:28:54Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,19,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,604,2026-05-06T21:28:55Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,20,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,612,2026-05-06T21:28:55Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,21,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1107,2026-05-06T21:28:56Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,22,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,769,2026-05-06T21:28:57Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,23,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1082,2026-05-06T21:28:58Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,24,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,831,2026-05-06T21:28:59Z,red,4.09,True,1,70,70,5,0,False,Computer Science
+FMBM,low,10,0.7,25,pass,0,16.8,16.8,0.0,0.09,0.09,4,20,1462,2026-05-06T21:29:00Z,red,4.09,True,1,70,70,5,0,False,Computer Science
