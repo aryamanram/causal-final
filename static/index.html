@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <title>Prediction Market Study</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main id="root">
+
+    <!-- ─── Screen 1: Welcome / Consent ─── -->
+    <section class="screen" id="screen-welcome" data-screen="welcome">
+      <div class="card">
+        <h1 class="page-title">Prediction Market Study</h1>
+        <p class="lead">
+          You will participate in a short interactive study where you trade in a
+          simulated prediction market for about 15 minutes. No real money is
+          involved at any point. All data collected is anonymous and used only
+          for the CS&nbsp;598 final report.
+        </p>
+        <ul class="consent-list">
+          <li>Participation is voluntary and you may stop at any time.</li>
+          <li>Data will be used only for the CS&nbsp;598 final report and may
+              be shared in anonymized form.</li>
+          <li>No personally identifying information is collected.</li>
+        </ul>
+        <label class="checkbox-row">
+          <input type="checkbox" id="consent-checkbox" />
+          <span>I have read the above and agree to participate.</span>
+        </label>
+        <button class="btn btn-primary" id="start-btn" disabled>Start session</button>
+        <div class="session-id-flash" id="session-id-flash" hidden>
+          Your session ID is <strong id="session-id-display"></strong> — please
+          write this down for the survey.
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Screen 1b: Comprehension Check (CHANGES #3) ─── -->
+    <section class="screen" id="screen-comprehension" data-screen="comprehension" hidden>
+      <div class="card">
+        <h1 class="page-title">Quick comprehension check</h1>
+        <p class="lead">
+          Two short questions to make sure the payout structure is clear before
+          you start trading. You'll need both correct to continue.
+        </p>
+
+        <form id="comprehension-form" novalidate>
+
+          <div class="field">
+            <label class="field-label" for="cq1-input">
+              1. If you buy a Yes share for ¢40 and a <strong>red</strong> ball
+              is drawn, how much do you receive per share? (Enter a number from
+              0 to 100.)
+            </label>
+            <input type="number" id="cq1-input" min="0" max="100" step="1" required />
+            <div class="field-error" id="cq1-error" hidden>
+              Not quite. Yes shares pay <strong>¢100</strong> if a red ball is
+              drawn. Try again.
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="cq2-input">
+              2. If you buy a No share for ¢60 and a <strong>red</strong> ball
+              is drawn, how much do you receive per share? (Enter a number from
+              0 to 100.)
+            </label>
+            <input type="number" id="cq2-input" min="0" max="100" step="1" required />
+            <div class="field-error" id="cq2-error" hidden>
+              Not quite. No shares pay <strong>¢0</strong> if a red ball is
+              drawn (they pay ¢100 only if blue is drawn). Try again.
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="comp-submit">
+            Check answers
+          </button>
+          <p class="field-note" id="comp-attempts-note" hidden>
+            Attempt <strong id="comp-attempt-num">1</strong>.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ─── Screen 1c: Belief Elicitation (CHANGES #4) ─── -->
+    <section class="screen" id="screen-belief" data-screen="belief" hidden>
+      <div class="card">
+        <h1 class="page-title">One more question before round 1</h1>
+        <p class="lead">
+          Based <strong>only</strong> on the urn contents (70 red, 30 blue),
+          what is your best estimate of the probability that a red ball will be
+          drawn? Enter a whole number from 0 to 100.
+        </p>
+
+        <form id="belief-form" novalidate>
+          <div class="field">
+            <label class="field-label" for="belief-input">Your estimate (%)</label>
+            <input type="number" id="belief-input" min="0" max="100" step="1" required />
+          </div>
+          <button type="submit" class="btn btn-primary" id="belief-submit">
+            Continue to round 1
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ─── Screen 2: Round X ─── -->
+    <section class="screen" id="screen-round" data-screen="round" hidden>
+      <div class="card">
+
+        <header class="round-header">
+          <div class="round-counter" id="round-counter">Round 1 of 25</div>
+          <h2 class="event-title">Will a red ball be drawn from the urn?</h2>
+          <p class="urn-desc">
+            The urn contains 70 red balls and 30 blue balls. One ball will be
+            drawn at random after Round 25.
+          </p>
+          <p class="info-italic">
+            Prices move as participants buy and sell — no new information is
+            revealed during the session.
+          </p>
+          <!-- CHANGES #2 — persistent payout reminder, visible every round. -->
+          <div class="payout-reminder">
+            Each share pays <strong>¢100</strong> if it's correct,
+            <strong>¢0</strong> if not. Buy below your estimate of the true
+            chance, sell above it.
+          </div>
+        </header>
+
+        <div class="recap-strip" id="recap-strip" hidden></div>
+
+        <div class="middle-region">
+
+          <div class="price-panel">
+            <div class="kicker">CURRENT PRICE</div>
+            <div class="price-value" id="price-value">¢50</div>
+            <div class="prob-pill" id="prob-pill">Market estimate: 50% chance of red</div>
+
+            <div class="chart-wrap">
+              <canvas id="price-chart" width="431" height="140"></canvas>
+            </div>
+          </div>
+
+          <div class="trade-panel" id="trade-panel">
+
+            <!-- Side-select view (always present; quantity view appears below it). -->
+            <div class="side-buttons">
+              <button class="side-btn" data-side="buy_yes" id="btn-buy-yes">Buy Yes</button>
+              <button class="side-btn" data-side="buy_no" id="btn-buy-no">Buy No</button>
+            </div>
+
+            <div class="quantity-block" id="quantity-block" hidden>
+              <div class="qty-row">
+                <span class="qty-label">Shares:</span>
+                <button class="qty-step" id="qty-minus" type="button">−</button>
+                <input type="number" id="qty-input" value="1" min="1" max="10" />
+                <button class="qty-step" id="qty-plus" type="button">+</button>
+              </div>
+              <div class="cost-preview" id="cost-preview">
+                <div><span>Cost:</span> <strong id="prev-cost">$0.00</strong></div>
+                <div><span>Payout if win:</span> <strong id="prev-payout">$0.00</strong></div>
+                <div><span>New price after trade:</span> <strong id="prev-price">¢50</strong></div>
+              </div>
+              <button class="btn btn-primary" id="confirm-btn">Confirm trade</button>
+              <button class="btn btn-link" id="cancel-btn">Change side</button>
+            </div>
+
+            <button class="btn btn-ghost" id="pass-btn">Pass this round</button>
+
+          </div>
+
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          <div class="cell"><div class="cell-label">CASH</div><div class="cell-value" id="cell-cash">$15.00</div></div>
+          <div class="cell"><div class="cell-label">YES SHARES</div><div class="cell-value" id="cell-yes">0</div></div>
+          <div class="cell"><div class="cell-label">NO SHARES</div><div class="cell-value" id="cell-no">0</div></div>
+          <div class="cell"><div class="cell-label">ROUND</div><div class="cell-value" id="cell-round">1</div></div>
+          <div class="cell"><div class="cell-label">TRADES MADE</div><div class="cell-value" id="cell-trades">0</div></div>
+          <div class="cell"><div class="cell-label">PASSES</div><div class="cell-value" id="cell-passes">0</div></div>
+        </div>
+
+      </div>
+
+      <!-- Pass-confirm inline modal -->
+      <div class="modal-backdrop" id="pass-modal" hidden>
+        <div class="modal">
+          <p id="pass-modal-text">Pass round 1? You won't trade this round.</p>
+          <div class="modal-buttons">
+            <button class="btn btn-ghost" id="pass-cancel">Cancel</button>
+            <button class="btn btn-primary" id="pass-confirm">Pass round</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Screen 3: Session Complete ─── -->
+    <section class="screen" id="screen-complete" data-screen="complete" hidden>
+      <div class="card">
+
+        <header class="complete-header">
+          <div class="check-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M5 12.5l4 4 10-10" stroke="white" stroke-width="2.5"
+                    fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h1 class="page-title">Session complete</h1>
+          <p class="subtitle">All 25 rounds have been played. Here are your results.</p>
+        </header>
+
+        <section class="block">
+          <div class="kicker">OUTCOME</div>
+          <div class="result-box" id="result-box">
+            <div class="result-line-1" id="result-line-1">A red ball was drawn</div>
+            <div class="result-line-2" id="result-line-2">
+              Yes shares paid out ¢100 each. No shares expired worthless.
+            </div>
+          </div>
+        </section>
+
+        <!-- CHANGES #1 — explicit wallet decomposition. Each row's right-hand
+             column is the dollar contribution; the running total is shown so
+             participants can verify the arithmetic themselves. -->
+        <section class="block">
+          <div class="kicker">PAYOUT BREAKDOWN</div>
+          <div class="breakdown-box" id="breakdown-box">
+
+            <div class="breakdown-row">
+              <span>Cash held at end of round 25</span>
+              <span id="bk-cash-end">$0.00</span>
+            </div>
+
+            <div class="breakdown-row">
+              <span id="bk-yes-label">+ 0 Yes shares × $1.00</span>
+              <span class="positive" id="bk-yes-amount">+$0.00</span>
+            </div>
+
+            <div class="breakdown-row">
+              <span id="bk-no-label">+ 0 No shares × $0.00</span>
+              <span class="muted" id="bk-no-amount">$0.00</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="breakdown-row total">
+              <span>Final wallet value</span>
+              <span id="bk-final-wallet">$0.00</span>
+            </div>
+
+            <div class="breakdown-row">
+              <span>− Starting cash</span>
+              <span class="muted">−$15.00</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="breakdown-row total">
+              <span>Total P&amp;L</span>
+              <span id="bk-pnl-line">$0.00</span>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="performance-grid" id="performance-grid">
+          <div class="cell"><div class="cell-label">TRADES MADE</div><div class="cell-value" id="pg-trades">0</div></div>
+          <div class="cell"><div class="cell-label">ROUNDS PASSED</div><div class="cell-value" id="pg-passes">0</div></div>
+          <div class="cell"><div class="cell-label">FINAL PRICE</div><div class="cell-value" id="pg-final-price">¢0</div></div>
+        </section>
+
+        <footer class="complete-footer">
+          <p class="thanks">Thank you for participating!</p>
+          <p class="next">Please complete the brief post-experiment survey.</p>
+          <button class="btn btn-primary" id="take-survey-btn">Take survey</button>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- ─── Screen 4: Survey ─── -->
+    <section class="screen" id="screen-survey" data-screen="survey" hidden>
+      <div class="card">
+        <h1 class="page-title">Post-experiment survey</h1>
+        <p class="lead">
+          Submitting survey for session: <strong id="survey-session-id"></strong>
+        </p>
+
+        <form id="survey-form" novalidate>
+
+          <div class="field">
+            <label class="field-label">
+              How would you describe your risk tolerance?
+            </label>
+            <div class="likert" id="risk-tolerance-group">
+              <label><input type="radio" name="risk_tolerance" value="1" required /><span>1 · Very risk-averse</span></label>
+              <label><input type="radio" name="risk_tolerance" value="2" /><span>2</span></label>
+              <label><input type="radio" name="risk_tolerance" value="3" /><span>3</span></label>
+              <label><input type="radio" name="risk_tolerance" value="4" /><span>4</span></label>
+              <label><input type="radio" name="risk_tolerance" value="5" /><span>5 · Very risk-seeking</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="experience-input">
+              How many months of active trading experience do you have? (Enter 0 if none.)
+            </label>
+            <input type="number" id="experience-input" name="trading_experience_months"
+                   min="0" step="1" value="0" required />
+          </div>
+
+          <div class="field">
+            <label class="field-label">
+              Have you used a prediction market platform like Kalshi, Polymarket, PredictIt, or Manifold?
+            </label>
+            <div class="yes-no">
+              <label><input type="radio" name="prediction_market_familiarity" value="yes" required /><span>Yes</span></label>
+              <label><input type="radio" name="prediction_market_familiarity" value="no" /><span>No</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="field-input">
+              What is your primary field of study?
+            </label>
+            <input type="text" id="field-input" name="field_of_study" maxlength="100" required />
+          </div>
+
+          <!-- CHANGES #15 — post-session belief, pairs with the pre-trial elicitation. -->
+          <div class="field">
+            <label class="field-label" for="final-belief-input">
+              Now that the session is over, what do you think the probability of
+              a red ball was? Enter a whole number from 0 to 100.
+            </label>
+            <input type="number" id="final-belief-input" name="final_belief_pct"
+                   min="0" max="100" step="1" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="survey-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ─── Screen 5: Thank You ─── -->
+    <section class="screen" id="screen-thanks" data-screen="thanks" hidden>
+      <div class="card">
+        <h1 class="page-title">Thank you</h1>
+        <p class="lead">
+          Your session is complete and your responses have been recorded. You
+          may now close this browser tab.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="/static/chart.umd.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

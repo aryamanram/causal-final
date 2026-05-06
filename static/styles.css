@@ -1,0 +1,436 @@
+/* ─── Design tokens (from spec §5.1) ───────────────────────────── */
+:root {
+  --bg-page:        #F7F7F9;
+  --bg-card:        #FFFFFF;
+  --bg-pill:        #EFF0F4;
+  --bg-recap:       #EBF1FB;
+  --bg-payout-box:  #F8F8FA;
+  --bg-payout-bdr:  #E5E5EA;
+
+  --text-primary:   #2E2E36;
+  --text-secondary: #74747C;
+  --text-muted:     #A0A0A8;
+
+  --accent-blue:    #335FAE;
+  --accent-positive:#21765E;
+  --accent-negative:#A23939;
+
+  --gridline:       #E6E6EA;
+  --refline:        #A6A6AE;
+
+  --card-border:    #E0E0E5;
+  --card-shadow:    0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --radius-card:    12px;
+  --radius-control: 8px;
+  --radius-pill:    999px;
+
+  --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ─── Base ─────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-stack);
+  font-size: 14px;
+  line-height: 1.45;
+  min-height: 100vh;
+  padding: 48px 16px;
+}
+
+#root { display: block; }
+
+.screen { display: block; }
+.screen[hidden] { display: none !important; }
+
+/* Author rules below set display:flex on .modal-backdrop and other elements,
+ * which silently overrides the UA `[hidden] { display: none }` default. We
+ * restore the intended hide-on-`hidden` behavior globally. */
+[hidden] { display: none !important; }
+
+.card {
+  width: 740px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow);
+  padding: 32px;
+}
+
+.page-title { font-size: 32px; font-weight: 600; margin: 0 0 16px; letter-spacing: -0.01em; }
+.subtitle   { font-size: 14px; color: var(--text-secondary); margin: 4px 0 0; }
+.lead       { font-size: 14px; color: var(--text-primary); margin: 0 0 16px; }
+
+.kicker {
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+/* ─── Buttons ──────────────────────────────────────────────────── */
+.btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-control);
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 12px 16px;
+  transition: background-color 120ms, border-color 120ms, color 120ms;
+}
+.btn:disabled { cursor: not-allowed; opacity: 0.55; }
+
+.btn-primary {
+  background: var(--accent-blue);
+  color: white;
+  width: 100%;
+  height: 48px;
+  margin-top: 12px;
+}
+.btn-primary:hover:not(:disabled) { background: #2A4F92; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--gridline);
+  width: 100%;
+  margin-top: 12px;
+}
+.btn-ghost:hover:not(:disabled) { background: #F2F2F5; }
+
+.btn-link {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  width: 100%;
+  margin-top: 4px;
+}
+.btn-link:hover { color: var(--text-primary); text-decoration: underline; }
+
+/* ─── Welcome screen ──────────────────────────────────────────── */
+.consent-list {
+  margin: 16px 0 24px 0;
+  padding-left: 20px;
+  color: var(--text-secondary);
+}
+.consent-list li { margin-bottom: 8px; }
+
+.checkbox-row {
+  display: flex; align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.checkbox-row input { width: 16px; height: 16px; }
+
+.session-id-flash {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--bg-recap);
+  border-radius: var(--radius-control);
+  font-size: 14px;
+  text-align: center;
+}
+.session-id-flash strong {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Round screen ────────────────────────────────────────────── */
+.round-header { margin-bottom: 16px; }
+.round-counter {
+  font-size: 14px; font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.event-title {
+  font-size: 22px; font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--text-primary);
+}
+.urn-desc { font-size: 14px; color: var(--text-secondary); margin: 0 0 8px; }
+.info-italic {
+  font-size: 12px; font-style: italic;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.recap-strip {
+  background: var(--bg-recap);
+  padding: 10px 16px;
+  border-radius: var(--radius-control);
+  font-size: 13px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+/* CHANGES #2 — persistent payout reminder above the price/trade region. */
+.payout-reminder {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--bg-payout-box);
+  border: 1px solid var(--bg-payout-bdr);
+  border-radius: var(--radius-control);
+  font-size: 13px;
+  color: var(--text-primary);
+}
+.payout-reminder strong { font-weight: 600; color: var(--accent-blue); }
+
+/* CHANGES #3 — comprehension check error and attempt-counter helpers. */
+.field-error {
+  margin-top: 6px;
+  padding: 8px 12px;
+  background: #FBECEC;
+  border: 1px solid #E9C8C8;
+  border-radius: var(--radius-control);
+  font-size: 12px;
+  color: var(--accent-negative);
+}
+.field-note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.recap-strip strong { font-weight: 600; }
+
+.middle-region {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.price-panel { display: flex; flex-direction: column; }
+.price-value {
+  font-size: 44px; font-weight: 600;
+  margin: 4px 0 8px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.prob-pill {
+  display: inline-block;
+  background: var(--bg-pill);
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+.chart-wrap {
+  width: 100%;
+  height: 140px;
+  background: white;
+  border: 1px solid var(--gridline);
+  border-radius: 6px;
+  padding: 12px 8px 12px 36px;
+}
+.chart-wrap canvas { width: 100% !important; height: 100% !important; }
+
+/* Trade panel */
+.trade-panel { display: flex; flex-direction: column; }
+
+.side-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.side-btn {
+  width: 100%;
+  height: 64px;
+  background: white;
+  border: 1px solid var(--gridline);
+  border-radius: var(--radius-control);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 120ms, background-color 120ms;
+}
+.side-btn:hover { background: #FAFAFC; }
+.side-btn.selected {
+  border: 2px solid var(--accent-blue);
+  background: #F1F4FB;
+}
+
+.quantity-block { margin-top: 12px; }
+
+.qty-row {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 12px;
+}
+.qty-label { font-size: 14px; color: var(--text-secondary); }
+.qty-step {
+  width: 32px; height: 32px;
+  background: white;
+  border: 1px solid var(--gridline);
+  border-radius: var(--radius-control);
+  font-size: 18px;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text-primary);
+}
+.qty-step:hover:not(:disabled) { background: #F2F2F5; }
+#qty-input {
+  width: 56px; height: 32px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid var(--gridline);
+  border-radius: var(--radius-control);
+  background: white;
+}
+/* Hide native number-input spinners */
+#qty-input::-webkit-outer-spin-button,
+#qty-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+#qty-input { -moz-appearance: textfield; }
+
+.cost-preview {
+  background: var(--bg-payout-box);
+  border: 1px solid var(--bg-payout-bdr);
+  border-radius: var(--radius-control);
+  padding: 12px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.cost-preview > div { display: flex; justify-content: space-between; margin: 2px 0; }
+.cost-preview span  { color: var(--text-secondary); }
+.cost-preview strong { color: var(--text-primary); font-weight: 600; }
+
+#pass-btn { margin-top: 12px; }
+
+/* Portfolio grid */
+.portfolio-grid,
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: var(--bg-payout-box);
+  border: 1px solid var(--bg-payout-bdr);
+  border-radius: var(--radius-control);
+  padding: 16px;
+}
+.cell { padding: 8px; }
+.cell-label {
+  font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+.cell-value {
+  font-size: 28px; font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.cell-value.positive { color: var(--accent-positive); }
+.cell-value.negative { color: var(--accent-negative); }
+
+/* ─── Modal ───────────────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.32);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 50;
+}
+.modal {
+  background: white;
+  border-radius: var(--radius-card);
+  padding: 24px;
+  width: 360px;
+  max-width: calc(100% - 32px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+.modal p { margin: 0 0 16px; }
+.modal-buttons { display: flex; gap: 8px; }
+.modal-buttons .btn { margin-top: 0; }
+
+/* ─── Session Complete screen ─────────────────────────────────── */
+.complete-header { text-align: center; margin-bottom: 24px; }
+.check-circle {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--accent-positive);
+  color: white;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-bottom: 12px;
+}
+
+.block { margin-bottom: 24px; }
+.result-box,
+.breakdown-box {
+  background: var(--bg-payout-box);
+  border: 1px solid var(--bg-payout-bdr);
+  border-radius: var(--radius-control);
+  padding: 24px;
+}
+.result-line-1 { font-weight: 600; margin-bottom: 4px; font-size: 16px; }
+.result-line-2 { color: var(--text-secondary); }
+
+.breakdown-row {
+  display: flex; justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+.breakdown-row.total { font-weight: 600; padding-top: 12px; }
+.breakdown-row .positive { color: var(--accent-positive); font-weight: 600; }
+.breakdown-row .muted    { color: var(--text-muted); }
+.divider {
+  border-top: 1px solid var(--bg-payout-bdr);
+  margin: 8px 0 0;
+}
+
+.complete-footer { text-align: center; margin-top: 24px; }
+.thanks { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+.next   { color: var(--text-secondary); margin: 0 0 16px; }
+
+/* ─── Survey screen ───────────────────────────────────────────── */
+.field { margin-bottom: 24px; }
+.field-label {
+  display: block;
+  font-size: 13px; font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+.likert,
+.yes-no {
+  display: flex; flex-wrap: wrap;
+  gap: 8px;
+}
+.likert label,
+.yes-no label {
+  display: flex; align-items: center; gap: 6px;
+  background: white;
+  border: 1px solid var(--gridline);
+  border-radius: var(--radius-control);
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.likert input[type="radio"],
+.yes-no input[type="radio"] { margin: 0; }
+
+#experience-input,
+#field-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--gridline);
+  border-radius: var(--radius-control);
+  font-family: inherit;
+  font-size: 14px;
+  background: white;
+}
+#experience-input:focus,
+#field-input:focus { outline: 2px solid var(--accent-blue); outline-offset: -1px; }
