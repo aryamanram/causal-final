@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+KBRK,low,10,0.7,1,buy_yes,1,50.0,52.5,0.51,15.0,14.49,1,0,38414,2026-05-06T19:55:57Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,2,buy_no,1,52.5,50.0,0.49,14.49,14.0,1,1,7173,2026-05-06T19:56:04Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,3,buy_yes,4,50.0,59.9,2.2,14.0,11.8,5,1,4277,2026-05-06T19:56:09Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,4,buy_no,1,59.9,57.4,0.41,11.8,11.39,5,2,3439,2026-05-06T19:56:12Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,5,buy_yes,3,57.4,64.6,1.83,11.39,9.56,8,2,3590,2026-05-06T19:56:16Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,6,buy_no,2,64.6,59.9,0.76,9.56,8.8,8,4,2928,2026-05-06T19:56:19Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,7,buy_yes,4,59.9,69.0,2.58,8.8,6.22,12,4,6501,2026-05-06T19:56:25Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,8,buy_no,1,69.0,66.8,0.32,6.22,5.9,12,5,3766,2026-05-06T19:56:29Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,9,pass,0,66.8,66.8,0.0,5.9,5.9,12,5,3509,2026-05-06T19:56:32Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,10,pass,0,66.8,66.8,0.0,5.9,5.9,12,5,1491,2026-05-06T19:56:34Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,11,pass,0,66.8,66.8,0.0,5.9,5.9,12,5,1510,2026-05-06T19:56:35Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,12,buy_yes,1,66.8,69.0,0.68,5.9,5.22,13,5,1347,2026-05-06T19:56:37Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,13,pass,0,69.0,69.0,0.0,5.22,5.22,13,5,1426,2026-05-06T19:56:38Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,14,pass,0,69.0,69.0,0.0,5.22,5.22,13,5,1259,2026-05-06T19:56:39Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,15,buy_no,1,69.0,66.8,0.32,5.22,4.9,13,6,1264,2026-05-06T19:56:41Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,16,buy_yes,1,66.8,69.0,0.68,4.9,4.22,14,6,13447,2026-05-06T19:56:54Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,17,buy_yes,1,69.0,71.1,0.7,4.22,3.52,15,6,2583,2026-05-06T19:56:57Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,18,buy_no,1,71.1,69.0,0.3,3.52,3.22,15,7,2357,2026-05-06T19:56:59Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,19,buy_yes,1,69.0,71.1,0.7,3.22,2.52,16,7,1916,2026-05-06T19:57:01Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,20,buy_yes,1,71.1,73.1,0.72,2.52,1.8,17,7,3673,2026-05-06T19:57:05Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,21,buy_no,1,73.1,71.1,0.28,1.8,1.52,17,8,2024,2026-05-06T19:57:07Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,22,buy_no,1,71.1,69.0,0.3,1.52,1.22,17,9,1864,2026-05-06T19:57:09Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,23,buy_yes,1,69.0,71.1,0.7,1.22,0.52,18,9,1391,2026-05-06T19:57:10Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,24,buy_no,1,71.1,69.0,0.3,0.52,0.22,18,10,3007,2026-05-06T19:57:13Z,red,18.22,True,1,70,70,3,0,False,Computer Science
+KBRK,low,10,0.7,25,pass,0,69.0,69.0,0.0,0.22,0.22,18,10,1808,2026-05-06T19:57:15Z,red,18.22,True,1,70,70,3,0,False,Computer Science
