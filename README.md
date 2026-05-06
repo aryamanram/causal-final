@@ -38,10 +38,48 @@ causal-final/
 │   ├── styles.css           ← design tokens, layout
 │   ├── app.js               ← state machine, API calls
 │   └── chart.umd.js         ← vendored Chart.js 4.4.1
-└── data/
-    ├── sessions/<id>.json   ← per-session, written on every state change
-    └── all_sessions.csv     ← appended on /finalize, NumPyro-ready
+├── session_data/
+│   └── <sid>.json           ← per-session JSON, tracked in git
+├── sessions_csv/
+│   └── <sid>.csv            ← per-session 25-row CSV, tracked in git
+├── data/
+│   └── all_sessions.csv     ← merged CSV, NumPyro-ready (gitignored)
+└── scripts/
+    └── merge_data.py        ← rebuild data/all_sessions.csv from session_data/
 ```
+
+## Data sharing across contributors (manual merge workflow)
+
+Each contributor runs the app on their own machine. Every finalized session
+writes:
+
+- `session_data/<sid>.json` — the canonical snapshot.
+- `sessions_csv/<sid>.csv` — a 25-row standalone CSV mirror of the JSON.
+
+Both are tracked in git. Because session IDs are unique 4-character codes,
+two contributors **never write to the same file**, so commits/pushes don't
+conflict. Anyone who pulls the repo sees everyone's sessions.
+
+The merged `data/all_sessions.csv` is **gitignored** — it's a derived artifact
+that is regenerated locally from `session_data/` whenever you want a single
+file for analysis:
+
+```sh
+python scripts/merge_data.py            # writes data/all_sessions.csv
+python scripts/merge_data.py --dry-run  # just report, no write
+```
+
+The script considers only sessions with `finalized_at` set and a populated
+`survey` block (i.e. complete sessions). Pass `--include-unfinalized` if you
+need to inspect partial sessions.
+
+**Suggested workflow:**
+
+1. `git pull` before running sessions.
+2. Run as many sessions as you like.
+3. `git add session_data/ sessions_csv/ && git commit -m "data: <n> sessions" && git push`.
+4. At analysis time, `python scripts/merge_data.py` to rebuild
+   `data/all_sessions.csv` from the union of everyone's contributions.
 
 ## Data export
 
