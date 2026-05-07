@@ -1,0 +1,26 @@
+session_id,condition,b_value,true_prob,round,action,shares,price_before,price_after,cost,cash_before,cash_after,q_yes_after,q_no_after,client_ms_on_round,timestamp_utc,draw_outcome,final_cash,session_completed,comprehension_attempts,initial_belief_pct,final_belief_pct,risk_tolerance,trading_experience_months,prediction_market_familiarity,field_of_study
+RMKT,low,10,0.7,1,buy_yes,1,50.0,52.5,0.51,15.0,14.49,1,0,47493,2026-05-07T00:33:42Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,2,buy_yes,1,52.5,55.0,0.54,14.49,13.95,2,0,4899,2026-05-07T00:33:47Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,3,buy_yes,1,55.0,57.4,0.56,13.95,13.39,3,0,12149,2026-05-07T00:33:59Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,4,buy_no,1,57.4,55.0,0.44,13.39,12.95,3,1,4221,2026-05-07T00:34:04Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,5,pass,0,55.0,55.0,0.0,12.95,12.95,3,1,10576,2026-05-07T00:34:14Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,6,buy_no,1,55.0,52.5,0.46,12.95,12.49,3,2,6989,2026-05-07T00:34:21Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,7,buy_yes,1,52.5,55.0,0.54,12.49,11.95,4,2,8016,2026-05-07T00:34:29Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,8,buy_yes,1,55.0,57.4,0.56,11.95,11.39,5,2,22155,2026-05-07T00:34:51Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,9,buy_yes,1,57.4,59.9,0.59,11.39,10.8,6,2,50564,2026-05-07T00:35:42Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,10,buy_no,1,59.9,57.4,0.41,10.8,10.39,6,3,6691,2026-05-07T00:35:49Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,11,buy_no,1,57.4,55.0,0.44,10.39,9.95,6,4,5697,2026-05-07T00:35:54Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,12,buy_yes,1,55.0,57.4,0.56,9.95,9.39,7,4,5881,2026-05-07T00:36:00Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,13,buy_yes,1,57.4,59.9,0.59,9.39,8.8,8,4,6860,2026-05-07T00:36:07Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,14,pass,0,59.9,59.9,0.0,8.8,8.8,8,4,8218,2026-05-07T00:36:15Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,15,buy_yes,1,59.9,62.2,0.61,8.8,8.19,9,4,5226,2026-05-07T00:36:21Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,16,buy_no,1,62.2,59.9,0.39,8.19,7.8,9,5,5235,2026-05-07T00:36:26Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,17,buy_no,1,59.9,57.4,0.41,7.8,7.39,9,6,4127,2026-05-07T00:36:30Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,18,pass,0,57.4,57.4,0.0,7.39,7.39,9,6,3453,2026-05-07T00:36:33Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,19,buy_yes,1,57.4,59.9,0.59,7.39,6.8,10,6,14987,2026-05-07T00:36:48Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,20,buy_no,1,59.9,57.4,0.41,6.8,6.39,10,7,40864,2026-05-07T00:37:29Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,21,buy_yes,1,57.4,59.9,0.59,6.39,5.8,11,7,3555,2026-05-07T00:37:33Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,22,buy_yes,1,59.9,62.2,0.61,5.8,5.19,12,7,15351,2026-05-07T00:37:48Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,23,pass,0,62.2,62.2,0.0,5.19,5.19,12,7,4878,2026-05-07T00:37:53Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,24,buy_yes,1,62.2,64.6,0.63,5.19,4.56,13,7,5556,2026-05-07T00:37:59Z,red,17.19,True,1,50,50,3,0,False,Business Economics
+RMKT,low,10,0.7,25,buy_no,1,64.6,62.2,0.37,4.56,4.19,13,8,3118,2026-05-07T00:38:02Z,red,17.19,True,1,50,50,3,0,False,Business Economics
