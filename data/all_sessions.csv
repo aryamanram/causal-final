@@ -799,3 +799,78 @@ FZFH,high,100,0.7,22,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,635,2026-05-07T01:25:37
 FZFH,high,100,0.7,23,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,752,2026-05-07T01:25:38Z,blue,0.03,True,3,70,70,5,0,False,Computer Science
 FZFH,high,100,0.7,24,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,636,2026-05-07T01:25:39Z,blue,0.03,True,3,70,70,5,0,False,Computer Science
 FZFH,high,100,0.7,25,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,783,2026-05-07T01:25:40Z,blue,0.03,True,3,70,70,5,0,False,Computer Science
+QCGT,high,100,0.7,1,buy_yes,10,50.0,52.5,5.12,15.0,9.88,10,0,12768,2026-05-07T04:18:15Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,2,buy_yes,10,52.5,55.0,5.37,9.88,4.51,20,0,3110,2026-05-07T04:18:18Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,3,buy_yes,8,55.0,57.0,4.48,4.51,0.03,28,0,3394,2026-05-07T04:18:21Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,4,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1461,2026-05-07T04:18:23Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,5,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,618,2026-05-07T04:18:23Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,6,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,503,2026-05-07T04:18:24Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,7,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,528,2026-05-07T04:18:24Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,8,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,852,2026-05-07T04:18:25Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,9,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,2134,2026-05-07T04:18:27Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,10,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1003,2026-05-07T04:18:28Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,11,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,595,2026-05-07T04:18:29Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,12,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,994,2026-05-07T04:18:30Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,13,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,584,2026-05-07T04:18:30Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,14,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,561,2026-05-07T04:18:31Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,15,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,517,2026-05-07T04:18:32Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,16,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,569,2026-05-07T04:18:32Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,17,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,586,2026-05-07T04:18:33Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,18,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,566,2026-05-07T04:18:33Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,19,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,595,2026-05-07T04:18:34Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,20,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,586,2026-05-07T04:18:34Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,21,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,544,2026-05-07T04:18:35Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,22,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,1368,2026-05-07T04:18:36Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,23,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,529,2026-05-07T04:18:37Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,24,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,551,2026-05-07T04:18:37Z,red,28.03,True,3,70,70,5,0,False,Business
+QCGT,high,100,0.7,25,pass,0,57.0,57.0,0.0,0.03,0.03,28,0,624,2026-05-07T04:18:38Z,red,28.03,True,3,70,70,5,0,False,Business
+TYGF,low,10,0.7,1,buy_yes,10,50.0,73.1,6.2,15.0,8.8,10,0,28923,2026-05-07T16:12:57Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,2,buy_yes,10,73.1,88.1,8.14,8.8,0.66,20,0,3227,2026-05-07T16:13:00Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,3,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,4703,2026-05-07T16:13:05Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,4,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,1370,2026-05-07T16:13:06Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,5,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,660,2026-05-07T16:13:07Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,6,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,659,2026-05-07T16:13:07Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,7,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,634,2026-05-07T16:13:08Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,8,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,712,2026-05-07T16:13:09Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,9,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,636,2026-05-07T16:13:09Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,10,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,685,2026-05-07T16:13:10Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,11,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,662,2026-05-07T16:13:11Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,12,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,613,2026-05-07T16:13:11Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,13,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,656,2026-05-07T16:13:12Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,14,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,719,2026-05-07T16:13:13Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,15,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,712,2026-05-07T16:13:14Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,16,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,711,2026-05-07T16:13:14Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,17,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,737,2026-05-07T16:13:15Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,18,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,870,2026-05-07T16:13:16Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,19,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,920,2026-05-07T16:13:17Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,20,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,1060,2026-05-07T16:13:18Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,21,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,868,2026-05-07T16:13:19Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,22,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,853,2026-05-07T16:13:20Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,23,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,561,2026-05-07T16:13:20Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,24,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,628,2026-05-07T16:13:21Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+TYGF,low,10,0.7,25,pass,0,88.1,88.1,0.0,0.66,0.66,20,0,829,2026-05-07T16:13:22Z,blue,0.66,True,2,70,70,5,0,False,Computer Science
+NDQH,high,100,0.7,1,buy_yes,3,50.0,50.7,1.51,15.0,13.49,3,0,13640,2026-05-07T16:39:37Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,2,buy_yes,6,50.7,52.2,3.09,13.49,10.4,9,0,14053,2026-05-07T16:39:51Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,3,buy_yes,4,52.2,53.2,2.11,10.4,8.29,13,0,2302,2026-05-07T16:39:53Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,4,buy_yes,4,53.2,54.2,2.15,8.29,6.14,17,0,1809,2026-05-07T16:39:55Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,5,buy_yes,1,54.2,54.5,0.54,6.14,5.6,18,0,1308,2026-05-07T16:39:56Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,6,buy_yes,5,54.5,55.7,2.76,5.6,2.84,23,0,2244,2026-05-07T16:39:58Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,7,buy_yes,5,55.7,57.0,2.82,2.84,0.02,28,0,5845,2026-05-07T16:40:04Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,8,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,3566,2026-05-07T16:40:08Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,9,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,1273,2026-05-07T16:40:09Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,10,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,740,2026-05-07T16:40:10Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,11,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,998,2026-05-07T16:40:11Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,12,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,662,2026-05-07T16:40:12Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,13,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,572,2026-05-07T16:40:12Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,14,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,535,2026-05-07T16:40:13Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,15,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,591,2026-05-07T16:40:13Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,16,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,618,2026-05-07T16:40:14Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,17,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,645,2026-05-07T16:40:15Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,18,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,687,2026-05-07T16:40:15Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,19,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,711,2026-05-07T16:40:16Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,20,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,741,2026-05-07T16:40:17Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,21,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,1052,2026-05-07T16:40:18Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,22,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,823,2026-05-07T16:40:19Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,23,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,661,2026-05-07T16:40:19Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,24,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,700,2026-05-07T16:40:20Z,blue,0.02,True,2,70,70,2,0,False,Computer Science
+NDQH,high,100,0.7,25,pass,0,57.0,57.0,0.0,0.02,0.02,28,0,692,2026-05-07T16:40:21Z,blue,0.02,True,2,70,70,2,0,False,Computer Science

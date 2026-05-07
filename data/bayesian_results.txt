@@ -1,0 +1,37 @@
+======================================================================
+BAYESIAN POSTERIOR ESTIMATES — τ is (low − high) effect
+======================================================================
+MSE                                     : mean = -0.0073   95% HPDI = [-0.0425, +0.0292]   P(τ>0) = 0.341
+Final pricing |p25 − 0.70|              : mean = -0.0742   95% HPDI = [-0.1481, -0.0056]   P(τ>0) = 0.023
+Mean trade size (shares)                : mean = -1.9391   95% HPDI = [-3.4469, -0.5595]   P(τ>0) = 0.007
+Final price (cents)                     : mean = +23.1999   95% HPDI = [+18.0332, +28.0010]   P(τ>0) = 1.000
+Trade frequency (log RR)                : mean = +0.3455   95% HPDI = [-0.0683, +0.7776]   P(τ>0) = 0.943
+  → Rate ratio (low / high): mean = 1.446   95% HPDI = [0.867, 2.071]
+Pass rate (log OR)                      : mean = -0.3921   95% HPDI = [-0.9805, +0.1708]   P(τ>0) = 0.090
+  → Pass rate diff (pp, low − high): mean = -9.42   95% HPDI = [-23.27, +4.19]
+
+======================================================================
+CONVERGENCE HAZARD MODEL
+======================================================================
+Log hazard ratio (low vs. high)         : mean = +1.1430   95% HPDI = [+0.0071, +2.2782]   P(τ>0) = 0.981
+  → Hazard ratio: mean = 3.74   95% HPDI = [0.65, 8.51]
+
+======================================================================
+MEDIATION DECOMPOSITION (Imai/Keele/Yamamoto 2010, two-model)
+======================================================================
+
+--- T → mean_trade_size → final pricing error ---
+NDE   mean = -0.0505   95% HPDI = [-0.1269, +0.0269]
+NIE   mean = -0.0143   95% HPDI = [-0.0447, +0.0112]
+Total mean = -0.0647   95% HPDI = [-0.1378, +0.0072]
+NDE/Total mean = 0.809   95% HPDI = [-0.833, 1.640]
+NIE/Total mean = 0.191   95% HPDI = [-0.640, 1.833]
+
+--- T → trade_frequency → final pricing error ---
+NDE   mean = -0.0621   95% HPDI = [-0.1385, +0.0112]
+NIE   mean = -0.0034   95% HPDI = [-0.0145, +0.0047]
+Total mean = -0.0655   95% HPDI = [-0.1365, +0.0084]
+NDE/Total mean = 0.947   95% HPDI = [0.496, 1.309]
+NIE/Total mean = 0.053   95% HPDI = [-0.309, 0.504]
+
+Sensitivity (rough): ρ that overturns NIE ≈ -0.01
